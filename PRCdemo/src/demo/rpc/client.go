@@ -1,15 +1,15 @@
 package main
 
 import (
-	"PRCdemo/src/demo/rpc/utils"
 	"fmt"
 	"log"
 	"net/rpc"
+	"pikaqi_dot/PRCdemo/src/demo/rpc/utils"
 )
 
 func main() {
 	var serverAddress = "localhost"
-	client, err := rpc.DialHTTP("tcp", serverAddress+":8080")
+	client, err := rpc.DialHTTP("tcp", serverAddress+":10800")
 	if err != nil {
 		log.Fatal("建立与服务端连接失败:", err)
 	}
